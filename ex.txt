@@ -1,0 +1,10 @@
+imprime(2);
+
+
+function imprime(t){
+  
+for(let i=0; i<11;i++){
+    
+ document.write(`<p>${2} * ${i} = ${i*t} </p>`)
+}
+}

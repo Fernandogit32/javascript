@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+ 
+<body>
+
+<p>Digite aqui sua resolução de ano novo,ou não!</p>
+    <input id="texto" type="text" name="nome" value="" />
+
+
+<button id="b1" >Agora vai</button>
+<button id="b2" >Não vai mais</button>
+
+
+<script>
+let b1 = document.querySelector('#b1'); 
+
+b1.addEventListener('click', clicou);
+
+
+function clicou() {
+     let textos= document.querySelector('#texto');
+     let elemento = document.createElement('p');
+     elemento.innerHTML=textos.value;
+     
+    
+    document.body.appendChild(elemento);
+    
+}
+
+
+</script>
+    
+
+    
+
+    
+    
+</body>
+</html>
