@@ -18,19 +18,34 @@
 
 
 <script>
+ var cont=0;  
 let b1 = document.querySelector('#b1'); 
+var b2 = document.querySelector('#b2')
 
 b1.addEventListener('click', clicou);
 
 
+
+
+
 function clicou() {
-     let textos= document.querySelector('#texto');
+   
+        let textos= document.querySelector('#texto');
+     
      let elemento = document.createElement('p');
-     elemento.innerHTML=textos.value;
+
+     elemento.id=cont++;
+      
+     elemento.innerHTML= `${elemento.id} ${textos.value}`;
+     
      
     
-    document.body.appendChild(elemento);
+    document.body.appendChild(elemento);   
+     
+        
+
     
+
 }
 
 
